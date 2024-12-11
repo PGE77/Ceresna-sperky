@@ -1,0 +1,132 @@
+footer {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    position: relative;
+    overflow:hidden;
+}
+
+.footer-top img {
+    height: 235px;
+    object-fit: cover;
+}
+
+.footer-top span {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.footer-top::after {
+    content: "Naša predajňa";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fffefe;
+
+    font-weight: 300;
+
+    @media screen and (min-width:768px){
+    font-size: 40px;
+
+
+    }
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    border-top: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(225, 225, 225);
+
+    margin-top: 85px;
+    margin-bottom: 16px;
+
+    min-height: 230px;
+
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+}
+
+.footer-middle ul {
+    display: flex;
+    flex-direction: column;
+    margin:15px 0px;
+    @media screen and (min-width:1024px) {
+        margin:0px 0px;
+
+    }
+}
+
+.footer-middle ul li {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-middle ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-middle .adress-info li:first-child {
+    font-size: 20px;
+    color: #000;
+}
+
+.footer-middle .adress-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-middle .adress-info li {
+    font-size: 14px;
+    line-height: 21px;
+    color: #777777;
+}
+
+.footer-middle h2 {
+    font-size: 20px;
+    color: #000;
+
+
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+.footer-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-bottom svg {
+    width: 20px;
+    height: 20px;
+}

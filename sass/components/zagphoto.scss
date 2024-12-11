@@ -1,0 +1,109 @@
+.zagPhoto {
+    margin-top: 100px;
+    padding: 50px 0px 50px 0px;
+    background-color: #fbfbfb;
+
+    @media screen and (min-width:1024px) {
+        padding: 100px 0px 200px 0px;
+
+    }
+
+    .zagPhotoFlex {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
+        @media screen and (min-width:1024px) {
+            gap: 150px;
+            flex-direction: row;
+            justify-content:flex-start;
+
+        }
+
+        .zagLeft {
+            width: 100%;
+
+            @media screen and (min-width:1024px) {
+                width: 40%;
+
+
+            }
+
+
+            .zagLink {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+
+                a {
+                    color: black;
+                    font-weight: bold;
+
+
+                }
+
+                span {
+                    height: 1px;
+                    background-color: black;
+                    width: 40px;
+
+
+                }
+
+
+            }
+
+            img {
+                margin-bottom: 25px;
+
+
+            }
+
+            h2 {
+                font-size: 40px;
+                line-height: 49px;
+                color: black;
+                margin-bottom: 15px;
+                font-weight: 300;
+
+            }
+
+            p {
+                color: $titleColor;
+                margin-bottom: 25px;
+                line-height: 23px;
+
+            }
+        }
+
+        .zagRight {
+
+            position: relative;
+            width: 100%;
+
+            @media screen and (min-width:1024px) {
+                width: 40%;
+
+
+            }
+
+            img {
+                position: relative;
+
+                @media screen and (min-width:1024px) {
+                    position: absolute;
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+}

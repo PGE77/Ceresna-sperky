@@ -1,0 +1,40 @@
+.companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 45px;
+    margin-top: 50px;
+
+    @media screen and (min-width:1024px) {
+        margin-top: 200px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 112px;
+    }
+
+}
+
+.companies div {
+    width: 108px;
+    height: 1px;
+    background-color: #e4e4e4;
+
+}
+
+.companies li {
+    height: 60px;
+    width: 214px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:1024px) {
+        height: 110px;
+        align-items: center;
+
+        flex-direction: row;
+
+    }
+}
